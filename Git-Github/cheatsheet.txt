@@ -1,0 +1,143 @@
+CHEATSHEET GIT GITHUB
+
+Es una ayuda para saber los comandos que existen y que hacen
+$ git help
+
+Explica un comando en específico
+$ git help <NombreDelComando>
+
+Establece el usuario de Git de forma global
+$ git config --global user.name "<NombreDeUsuarioDeGitHub>"
+
+Establece el email de Git de forma global
+$ git config --global user.email "<EmailDeGitHub>"
+
+Elimina el registro del nombre
+$ git config --global --unset user.name "<NombreDeUsuarioDeGitHub>"
+
+Elimina el registro del email
+$ git config --global --unset user.email "<EmailDeGitHub>"
+
+Muestra la configuración de Git (incluido el nombre e email)
+$ git config --list
+
+Muestra el nombre registrado
+$ git config user.name
+
+Muestra el email registrado
+$ git config user.email
+
+Crear un respositorio local
+$ git init
+
+Clonar un repositorio remoto
+$ git clone <linkDelRespositorio>
+
+Muestra el estado de los archivos y directorios
+$ git status
+
+Añade un archivo para que esté en seguimiento
+$ git add <nombreDelArchivo.extension>
+
+Añade todos los archivos que se encuentran en untracked para que estén en seguimiento
+$ git add .
+
+Commitea todos los archivos que se encuentran en el stage area para que ahora estén en la rama
+$ git commit -m "Mensaje del commit"
+
+Remueve un archivo
+$ git rm <nombreDelArchivo.extension>
+
+Remueve un directorio y todos los archivos que contenga
+$ git rm -r <nombreDelDirectorio>
+
+Muestra el historial de actividad, es decir, los commits realizados
+$ git log
+
+Muestra el historial de actividad de un archivo en específico
+$ git log -- <rutaDelArchivo>
+
+Muestra el historial de actividad de un usuario en particular
+$ git log --author=<nombreDelUsuario>
+
+Muestra la conexión remota, normalmente es "origin"
+$ git remote
+
+Muestra el repositorio remoto con el cual está asociado el respositio local
+$ git remote -v
+
+Enlaza el repositorio local con el repositio remoto que tenga el link digitado
+$ git remote add origin <linkDelRespositorio>
+
+Muestra la información del repositorio remoto con el que esté enlazado
+$ git remote show origin
+
+Permite cambiar el nombre del respositorio remoto (normalmente es origin)
+$ git remote rename origin <nombreNuevo>
+
+Desvincula un repositio remoto
+$ git remote rm <nombreDelRepositorio>
+
+Permite subir los cambios del respositorio local al repositorio remoto por primera vez
+$ git push -u origin main
+
+Sube los cambios del respositio local al repositorio remoto después de la primera vez
+$ git push
+
+Trae los cambios del repositorio remoto al repositorio local de la rama en la que se encuentre
+$ git pull
+
+Trae los cambios del respositio remoto pero no los aplica a la rama actual
+$ git fetch
+
+Crea una nueva rama
+$ git branch <nombreDeLaNuevaRama>
+
+Permite moverse a una rama existente
+$ git checkout <nombreDeLaRama>
+
+Crea una nueva rama y se mueve a dicha rama
+$ git checkout -b <nombreDeLaNuevaRama>
+
+Se mueve a la rama principal, la rama main
+$ git checkout main
+
+Une los cambios de dos ramas, haciendo que la rama digitada se una a la rama actual
+$ git merge <nombreDeLaRama>
+
+Elimina una rama local
+$ git branch -d <nombreDeLaRama>
+
+Elimina una rama remota
+$ git push origin --delete <nombreDeLaRama>
+
+Muestra todas las ramas existentes y señala la rama en la que nos encontramos
+$ git branch
+
+Muestra todas las ramas existentes con los últimos commits de cada una
+$ git branch -v
+
+Muestra las ramas que se han unido con la rama principal (main)
+$ git branch --merged
+
+Muestra las ramas que no se han unido con la rama principal (main)
+$ git branch --no-merged
+
+Trae los cambios del repositorio remoto al repositorio local de la rama que se digite
+$ git pull origin <nombreDeLaRama>
+
+Crea una rama en el repositorio remoto con el mismo nombre
+$ git push origin <nombreDeLaRama>
+
+Cualquiera de los dos permite deshacerse del merge cuando se genero algún problema
+$ git merge --abort
+$ git reset --merge
+
+Permite volver a un commit anterior
+$ git reset HEAD
+
+Permite volver el número de commits anteriores
+$ git reset HEAD~<numero>
+
+Permite modificar el mensaje del último commit realizado
+$ git commit --amend -m
