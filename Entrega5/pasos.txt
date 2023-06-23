@@ -1,1 +1,8 @@
-Para crear este archivo y poder subirla a la mochila utilice SSH, primero revise si el SSH estaba instalado en mimáquina virtual con el comando "dpkg -l openssh-server", como no estaba instalado procedi a instalarlo con el comando "sudo apt-get install openssh-server", posteriormente verifique si el servicio SSH estaba ejecutandose con el comando "sudo service ssh status", al comprobar que si estaba ejecutandose procedí a abrir mi terminal de windows y me conecté a mi máquina virtual con ayuda del comando "ssh ubuntu-cli@192.168.1.67", donde "ubuntu-cli" corresponde al nombre de mi MV y 192.168.1.67 a la IP de dicha MV. Luego cree el archivo con touch y lo abrí y edite con nano.
+Para crear este archivo y poder subirla a la mochila utilice SSH, 
+primero revise si el SSH estaba instalado en mi máquina virtual con el comando "dpkg -l openssh-server", 
+como no estaba instalado procedí a instalarlo con el comando "sudo apt-get install openssh-server", 
+posteriormente verifique si el servicio SSH estaba ejecutandose con el comando "sudo service ssh status", 
+al comprobar que si estaba ejecutandose procedí a abrir mi terminal de windows 
+y me conecté a mi máquina virtual con ayuda del comando "ssh ubuntu-cli@192.168.1.67", 
+donde "ubuntu-cli" corresponde al nombre de mi MV y 192.168.1.67 a la IP de dicha MV. 
+Luego cree el archivo con el comando touch y lo abrí y edite con el comando nano.
