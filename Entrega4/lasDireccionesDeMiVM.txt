@@ -1,0 +1,7 @@
+La IP privada de mi VM es: 10.0.2.15
+La IP pública de mi VM es: 191.95.169.137
+
+La dirección MAC de mi VM es: 08:00:27:c4:62:3f
+
+La IP privada si es diferente en mi máquina host a comparación de la IP de mi VM.
+Sin embargo, la IP pública si es la misma en ambas máquinas.
